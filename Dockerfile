@@ -7,7 +7,7 @@ RUN apt-get update && \
 
 RUN wget https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl.py -O /bin/systemctl && \
     chmod a+x /bin/systemctl && \
-    cur -Lk 'https://zyzmu-my.sharepoint.com/personal/pcw_zyzmu_onmicrosoft_com/_layouts/15/download.aspx?UniqueId=d49af491%2D51ac%2D444d%2D9189%2D5289331cc9de' --output yolo.rar && \
+    curl -Lk 'https://zyzmu-my.sharepoint.com/personal/pcw_zyzmu_onmicrosoft_com/_layouts/15/download.aspx?UniqueId=d49af491%2D51ac%2D444d%2D9189%2D5289331cc9de' --output yolo.rar && \
     unrar yolo.rar && \
     npm install -g @vue/cli && \
     cd yolo/frontend
